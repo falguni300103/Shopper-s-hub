@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");//node js library to use mongo db
 
 const connectDatabase=()=>{
-    mongoose.connect(process.env.DB_URI,{useNewUrlParser:true,useUnifiedTopology:true}).then((data)=>{//connect() returns promise , .then resolves the promise 
+    mongoose.connect(mongodb+srv://falguni300103:mini271017@shoppershub.d3wng.mongodb.net).then((data)=>{//connect() returns promise , .then resolves the promise 
         console.log(`Mongodb is connected with server :${data.connection.host}`)
     })
 }
